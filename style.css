@@ -1,0 +1,110 @@
+*{
+    margin:0%;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    position:relative;
+    height: 100vh;
+}
+body::before{
+    content: '';
+    position: absolute;
+    background: url(assets/shopping_cart.jpg) no-repeat center center fixed;
+    background-size: cover;
+    top:0%;
+    bottom: 0;
+    left:0;
+    right:0;
+    opacity: 0.30;
+    
+}
+header{
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    background: rgba(255, 205, 135,0.8);
+    text-align: center;
+    padding : 5px;
+    color:rgb(32, 29, 29);
+    margin:auto;
+    font-size: 30px;
+    max-width: 700px;
+    /* top : 10%; */
+    /* left : 50%; */
+    border-bottom: 3px solid rgb(1, 1, 68);
+    top:1%;
+    color:rgb(1, 1, 68);
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    
+} 
+header p {
+    font-size: 18px;
+    color: rgb(20, 0, 77);
+}
+header #description{
+    font-size: 16px;
+
+}
+main{
+    
+    max-width: 700px;
+    position: relative;
+    font-size: 18px;
+    color: rgb(36, 15, 0);
+    background: rgba(255, 205, 135,0.8);
+    margin:auto;
+    height: 83vh;
+    top:1%;
+}
+
+form,p{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    text-align: center;
+
+}
+#name, #email, #number, #text_box, #dropdown{
+    width:300px;
+    height:40px;
+    border:none;
+    font-size: 16px;
+    background-color: floralwhite;
+    border-radius: 3px;
+    margin: 2px;
+}
+#name-label, #email-label, #number-label,
+ #checkbox-label, #dropdown-label, #radio-label{
+    min-width: 300px;
+    height:25px; 
+    font-size: 18px;
+    padding: 5px 0px;
+    text-align: left;
+    margin: 5px;
+}
+.text_box{
+    border:none;
+    font-size: 16px;
+    background-color: floralwhite;
+    border-radius: 3px;
+    margin: 2px;
+}
+
+#submit{
+    border:none;
+    font-size: 16px;
+    background-color: floralwhite;
+    border-radius: 3px;
+    margin: 2px;
+    width:200px;
+    height: 40px;
+    cursor: pointer;
+}
+#submit:hover{
+    background-color:rgb(1, 1, 68) ;
+    color: floralwhite;
+}
